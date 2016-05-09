@@ -1,1 +1,9 @@
-# Angular2Menu
+# Angular2example
+
+
+
+npm install
+
+
+
+npm start
