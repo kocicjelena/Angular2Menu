@@ -1,0 +1,18 @@
+<div class="my-container">
+    <h1>
+    <ul class="heroes">
+      <li *ngFor="#hero of heroes"
+        [class.selected]="hero === selectedHero"
+        (click)="onSelect(hero)">
+   <h3>  {{hero.name}}</h3>
+      </li>
+     
+    </ul>
+   
+    </h1>
+   
+</div>
+<div class="my-mid"><my-hero-detail [hero]="selectedHero"></my-hero-detail></div>
+ <div class="my-fot">
+  <button (click)="onSave()">X</button>
+  </div>
